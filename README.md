@@ -1,7 +1,7 @@
 # Digispark Wifi Mailer
-Dieses Skript liest alle Wlan-Namen inklusive Passwörter aus Windows 10 mit deutschen Spracheinstellungen heraus und speichert sie in einer csv Datei. 
+Dieses Skript liest alle Wlan-Namen inklusive Passwörter aus Windows 10 mit deutschen Spracheinstellungen aus und speichert sie in einer CSV Datei. 
 
-Im nächsten Schritt wird diese Datei per Mail an seine eigene E-Mail Adresse geschickt. Dafür ist ein E-Mail Konto bzw. SMTP Server nötig. Das Skript muss dahingehend vom Benutzer angepasst werden. 
+Im nächsten Schritt wird diese Datei per Mail an eine E-Mail Adresse geschickt. Dafür ist ein E-Mail Konto bzw. SMTP Server nötig. Das Skript muss dahingehend vom Benutzer angepasst werden. 
 
 Abschließend wird die CSV Datei und die Powershell Historie gelöscht, damit das Opfer den Angriff nicht nachvollziehen kann. 
 
